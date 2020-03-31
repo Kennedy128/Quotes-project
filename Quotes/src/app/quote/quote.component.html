@@ -1,7 +1,7 @@
-<h1>My Goals</h1>
+<h1>My inspiring Quotes</h1>
 <ul>
     <div *ngFor='let goal of goals;let i = index'>
-        <li appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</li> 
+        <li appStrikethrough>{{goal.name}} created on {{goal.completeDate|date|uppercase}}</li> 
         
         <button  (click)='toggleDetails(i)'>Toggle Details</button>
 
@@ -9,4 +9,4 @@
     
     </div>
 </ul>
-<p *ngIf='goals.length > 5'>You have too many goals</p>
+<p *ngIf='goals.length > 5'>You have too many Quotes registered</p>
