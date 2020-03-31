@@ -4,24 +4,34 @@
     <form #quoteForm='ngForm'>
     
         <div class="form-group">
+            <label for="name">name</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p>Name is to be accesed</p>
+          </div>
   
-            <label for="name">Name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
-            Display {{newQuote.name}}
             
   
         </div>
         <div class="form-group">
+            <label for="author">author</label>
+            <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.description" name="author" #description="ngModel" required></textarea>
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p>author is to be accesed</p>
+            </div>
   
-            <label for="description">author</label>
-            <textarea class="form-control" id="description" rows="4" required></textarea>
+            
   
         </div>
         <div class="form-group">
-            <label for="complete">date created</label>
-            <input type='date' id="complete" required>
+            <label for="complete">Creation-date</label>
+            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
+            
   
         </div>
-        <button type="submit" class="btn btn-success">Add an interesting quote</button>
+        <button type="submit" class="btn btn-success">Add interesting goal</button>
     </form>
   </div>
