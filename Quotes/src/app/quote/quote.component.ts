@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   goals:Quote[] = [
-    {id:1, name:'Watch finding Nemo',description:'Find an online version and watch merlin find his son'},
-    {id:2,name:'Buy Cookies',description:'I have to buy cookies for the parrot'},
-    {id:3,name:'Get new Phone Case',description:'Diana has her birthday coming up soon'},
-    {id:4,name:'Get Dog Food',description:'Pupper likes expensive sancks'},
-    {id:5,name:'Solve math homework',description:'Damn Math'},
-    {id:6,name:'Plot my world domination plan',description:'Cause I am an evil overlord'},
+    {id:1, name:'life is what happens when you are busy making other plans',description:'written by Diana from Linklon'},
+    {id:2,name:'you know you are in love when you cant fall sleep becaise reality is finally better than your dreams',description:'written by Dr sue Germany'},
+    {id:3,name:'Get busy living or get busy dying',description:'written by Mark Caine'},
+    {id:4,name:'twenty years from now you will be more disappointed by the things that you didnt do than by the ones you did',description:'written by Mark Twain'},
+    {id:5,name:'great minds discuss ideas,avarage mind discuss events and small minds discuss people',description:'written by Eleanor Roosevelt'},
+    {id:6,name:'God is the way,the Truth and the life and whoever believes in him shall inherit the kingdom of heaven',description:'believed by Kennedy Mbithi'},
   
   ];
 
