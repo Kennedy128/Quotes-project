@@ -4,8 +4,9 @@
         <li appStrikethrough>{{goal.name}} created on {{goal.completeDate|date|uppercase}}</li> 
         
         <button  (click)='toggleDetails(i)'>Toggle Details</button>
+        <app-quote-detail *ngIf='goal.showDescription' [quote]='goal' (isComplete) = 'deleteGoal($event,i)'></app-quote-detail>
 
-    <app-quote-details *ngIf="goal.showDescription" [quote]='goal' (isComplete)= 'completeGoal($event,i)'></app-quote-details>
+   
     
     </div>
 </ul>
