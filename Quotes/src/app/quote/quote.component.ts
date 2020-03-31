@@ -17,6 +17,12 @@ export class QuoteComponent implements OnInit {
    
    
   ];
+  addNewQuote(quote){
+    let goalLength = this.goals.length;
+    quote.id = goalLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    
+  }
   deleteGoal(isComplete, index){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?`)
